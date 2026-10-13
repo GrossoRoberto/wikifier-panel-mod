@@ -1,0 +1,7 @@
+{
+  "name": "wikifier-panel-mod",
+  "owner": { "name": "GrossoRoberto" },
+  "plugins": [
+    { "name": "wiki-tree", "source": "./wiki-tree" }
+  ]
+}

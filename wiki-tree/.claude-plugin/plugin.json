@@ -1,0 +1,6 @@
+{
+  "name": "wiki-tree",
+  "version": "0.6.0",
+  "description": "Side panel with the wiki tree of the wikifier skill: updated pages in green, flags from wiki-check / wiki-audit / wiki-status read from the chat in orange and red, filters, and buttons for the wikifier commands. Command /wiki-tree.",
+  "types": "./types/index.d.ts"
+}
