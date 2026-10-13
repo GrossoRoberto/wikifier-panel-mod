@@ -2,7 +2,21 @@
 
 A Claude Code mod that adds a side panel for wikis managed by the [wikifier](https://github.com/GrossoRoberto/wikifier) skill. It ships one plugin, `wiki-tree`.
 
-**Status:** version 0.6.0, first public release. It was developed and used by the author on Claude Code Desktop; it has not been tested elsewhere. The logic tests (`wiki-tree/hooks/logic.test.ts`) were not run by the author after the English translation: see [Tests](#tests).
+**Status:** version 0.6.0, first public release. It was developed and used by the author on Claude Code Desktop, where the English version installed from this repository opens and shows the panel (see the screenshots below); it has not been tested elsewhere. The logic tests (`wiki-tree/hooks/logic.test.ts`) were not run by the author after the English translation: see [Tests](#tests).
+
+## Screenshots
+
+The four tabs of the panel in Claude Code Desktop. There was no `wiki-check` / `wiki-audit` / `wiki-status` result in that chat, so the screenshots show no status colours; the green dots mark pages not yet seen.
+
+| Panel | Read |
+|---|---|
+| ![The Panel tab: refresh, mark all seen, filters and the wiki tree](docs/screenshots/panel-tab.png) | ![The Read tab: Check, Status, Audit and Query buttons](docs/screenshots/read-tab.png) |
+
+| Create/Fix | Update/Edit |
+|---|---|
+| ![The Create/Fix tab: Init and Check err buttons](docs/screenshots/create-fix-tab.png) | ![The Update/Edit tab: Ingest, Update and Delete buttons](docs/screenshots/update-edit-tab.png) |
+
+The small dots on the buttons come from the padding character that makes the whole button area clickable.
 
 ## What it does
 
@@ -34,14 +48,14 @@ The mod does not change the wiki by itself. The only things it stores are the "s
 
 ## Install
 
-From a Claude Code session:
+From a terminal:
 
 ```
-/plugin marketplace add GrossoRoberto/wikifier-panel-mod
-/plugin install wiki-tree@wikifier-panel-mod
+claude plugin marketplace add GrossoRoberto/wikifier-panel-mod
+claude plugin install wiki-tree@wikifier-panel-mod --scope user
 ```
 
-Or clone the repository and add the folder as a local marketplace. The exact commands depend on your Claude Code version; check `/plugin` or `claude plugin --help`. These commands were not tested by the author for this repository.
+Then run `/reload-plugins` (or start a new session) and `/wiki-tree`. The author ran these two commands on Windows and `/wiki-tree` opened the panel. The `/plugin ...` slash-command forms, and other operating systems, were not tested. The exact commands depend on your Claude Code version; check `claude plugin --help`.
 
 ## Languages
 
