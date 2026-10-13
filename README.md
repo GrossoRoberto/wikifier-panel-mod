@@ -18,6 +18,12 @@ The four tabs of the panel in Claude Code Desktop. There was no `wiki-check` / `
 
 The small dots on the buttons come from the padding character that makes the whole button area clickable.
 
+### Known limitation: Windows console
+
+In the classic Windows console (the `cmd` / PowerShell window) the buttons are filled with squares, because the padding character (empty braille, U+2800) has no glyph in the console font. Claude Code's own symbols, such as the "auto mode" marker, show as squares in the same window. The panel still works. Windows Terminal or another font with braille glyphs may fix it; this was not tested.
+
+![The panel in the classic Windows console: buttons padded with squares](docs/screenshots/terminal-windows-console.png)
+
 ## What it does
 
 Open it with `/wiki-tree`. The panel shows:
