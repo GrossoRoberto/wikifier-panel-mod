@@ -86,7 +86,7 @@ wiki-tree/
 
 ## Contributing
 
-Issues and pull requests are welcome. The panel text and the code are in English; keep result recognition bilingual unless you add another language.
+Bug reports and suggestions are welcome through [Issues](../../issues), using the forms provided. Pull requests are not accepted for now: see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 

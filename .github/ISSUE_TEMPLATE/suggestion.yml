@@ -1,0 +1,22 @@
+name: Suggestion
+description: An idea to improve the wiki-tree panel
+title: "[Suggestion] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+      description: Describe the idea.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why?
+      description: What problem does it solve for you?
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Mockups, examples, other languages to recognise.

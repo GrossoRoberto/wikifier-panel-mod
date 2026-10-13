@@ -1,0 +1,46 @@
+name: Bug report
+description: Something in the wiki-tree panel does not work as expected
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, what you got. A screenshot helps.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: wiki-tree version
+      description: From `claude plugin list`, for example 0.6.0.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where do you run Claude Code?
+      options:
+        - Claude Code Desktop
+        - Terminal (Windows Terminal)
+        - Terminal (classic Windows console)
+        - Terminal (macOS / Linux)
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: claude-version
+    attributes:
+      label: Claude Code version
+      description: Output of `claude --version`.
+  - type: input
+    id: language
+    attributes:
+      label: "`language` in infowiki.md"
+      description: For example it or en. It matters for recognising check, status and audit results.
+  - type: textarea
+    id: output
+    attributes:
+      label: Messages or output
+      description: Error text, or the check/audit/status result the panel misread. Remove anything private.
